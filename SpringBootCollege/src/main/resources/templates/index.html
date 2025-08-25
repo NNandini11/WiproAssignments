@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Declares this document is using HTML5 -->
+
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Enables Thymeleaf support in this HTML file by declaring its XML namespace -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8 so all characters display correctly -->
+
+    <title style="color:blue">College CRUD Operations</title>
+    <!-- Title shown in the browser tab. (Note: inline style on <title> won't have any visual effect) -->
+</head>
+
+<body>
+    <h2>Add College Here</h2>
+    <!-- Page heading for the form -->
+
+    <form th:action="@{/save}" th:object="${college}" method="post">
+        <!-- 
+        Starts a form that will send data to the "/save" URL when submitted.
+        th:action="@{/save}" tells Thymeleaf to set the form's action to /save.
+        th:object="${college}" binds the form to a 'college' object from the controller.
+        This allows automatic binding between form fields and the object’s properties.
+        -->
+
+        Student Name-> <input type="text" th:field="*{name}" /><br>
+        <!-- 
+        Input field for the 'name' property of the college object.
+        th:field="*{name}" means this field is linked to college.getName() / setName()
+        -->
+
+        Student Email-> <input type="text" th:field="*{email}" /><br>
+        <!-- 
+        Input field for the 'email' property of the college object.
+        th:field="*{email}" links this field to college.getEmail() / setEmail()
+        -->
+
+        <button type="submit">Add</button>
+        <!-- Button to submit the form data to the server -->
+    </form>
+    
+    <h2>Here we are displaying Student details here</h2>
+    <table border="1">
+    <tr>
+    <th>Id</th>
+    <th>Student Name</th>
+    <th>Student Email</th>
+    </tr>
+    <tr th:each="c:${list}">
+    <td th:text="${c.id}"></td>
+          <td th:text="${c.name}"></td>
+          <td th:text="${c.email}"></td>
+          <td><a th:href="@{'/edit/'+${c.id}}">Update</a>
+          <a th:href="@{'/delete/'+${c.id}}">Delete</a></td>
+    </tr>
+    </table>
+</body>
+</html>
