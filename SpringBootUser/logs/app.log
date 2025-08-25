@@ -1,0 +1,642 @@
+2025-08-18T12:31:18.311+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:31:18.318+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:31:18.399+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18T12:31:18.399+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18T12:31:19.795+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:31:19.858+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-08-18T12:31:20.563+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:31:20.584+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:31:20.585+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:31:20.671+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:31:20.673+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2273 ms
+2025-08-18T12:31:20.962+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:31:21.038+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-18T12:31:21.084+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:31:21.418+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:31:21.454+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-18T12:31:21.925+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4553c769
+2025-08-18T12:31:21.932+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-18T12:31:22.042+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:31:23.013+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:31:23.091+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:31:23.674+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:31:23.975+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:31:24.403+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:31:24.448+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:31:24.455+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:31:24.543+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:31:24.560+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 6.742 seconds (process running for 7.604)
+2025-08-18T12:31:25.217+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18T12:31:25.217+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-18T12:31:25.220+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-18T12:32:38.318+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : Fetching user Deatils with id 1:
+2025-08-18T12:32:38.568+05:30 ERROR 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.example.demo.services.UserServiceImpl.getUser(UserServiceImpl.java:26) ~[classes/:na]
+	at com.example.demo.controller.UserController.gettingUser(UserController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.example.demo.controller.UserController$$SpringCGLIB$$0.gettingUser(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-18T12:35:02.914+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:35:02.918+05:30  INFO 9360 --- [SpringBootUser] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:35:02.925+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:35:02.933+05:30  INFO 9360 --- [SpringBootUser] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:35:02.936+05:30  INFO 9360 --- [SpringBootUser] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-18T12:35:02.943+05:30  INFO 9360 --- [SpringBootUser] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-18T12:35:03.040+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:35:03.040+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:35:03.347+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:35:03.357+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-08-18T12:35:03.510+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:35:03.512+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:35:03.512+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:35:03.541+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:35:03.541+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2025-08-18T12:35:03.616+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:35:03.619+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:35:03.629+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:35:03.630+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-18T12:35:03.646+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ebc385d
+2025-08-18T12:35:03.646+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-18T12:35:03.648+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:35:03.689+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:35:03.708+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:35:03.806+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:35:03.899+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:35:04.069+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:35:04.079+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:35:04.084+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:35:04.108+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:35:04.115+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 1.101 seconds (process running for 227.159)
+2025-08-18T12:35:04.119+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:35:14.642+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18T12:35:14.642+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-18T12:35:14.645+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-18T12:35:14.647+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : Fetching user Deatils with id 1:
+2025-08-18T12:35:14.673+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : response sent for user id 1 :User(id=1, name=Nandini, email=nandini4e0@gmail.com)
+2025-08-18T12:35:39.129+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:35:39.136+05:30  INFO 9360 --- [SpringBootUser] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:35:39.151+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:35:39.155+05:30  INFO 9360 --- [SpringBootUser] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:35:39.156+05:30  INFO 9360 --- [SpringBootUser] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-18T12:35:39.160+05:30  INFO 9360 --- [SpringBootUser] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-18T12:35:39.264+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:35:39.265+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:35:39.602+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:35:39.612+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-18T12:35:39.682+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:35:39.683+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:35:39.683+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:35:39.734+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:35:39.734+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 467 ms
+2025-08-18T12:35:39.849+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:35:39.854+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:35:39.861+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:35:39.862+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-18T12:35:39.880+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6461a706
+2025-08-18T12:35:39.881+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-18T12:35:39.883+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:35:39.917+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:35:39.932+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:35:40.017+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:35:40.092+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:35:40.225+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:35:40.238+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:35:40.243+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:35:40.264+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:35:40.276+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 1.036 seconds (process running for 263.32)
+2025-08-18T12:35:40.279+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:36:45.804+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:36:45.806+05:30  INFO 9360 --- [SpringBootUser] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:36:45.819+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:36:45.824+05:30  INFO 9360 --- [SpringBootUser] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:36:45.825+05:30  INFO 9360 --- [SpringBootUser] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-18T12:36:45.827+05:30  INFO 9360 --- [SpringBootUser] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-18T12:36:45.913+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:36:45.913+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:36:46.200+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:36:46.208+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-18T12:36:46.295+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:36:46.296+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:36:46.296+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:36:46.311+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:36:46.311+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 396 ms
+2025-08-18T12:36:46.387+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:36:46.389+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:36:46.409+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:36:46.410+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-18T12:36:46.428+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bddb5be
+2025-08-18T12:36:46.428+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-18T12:36:46.429+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:36:46.463+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:36:46.476+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:36:46.558+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:36:46.624+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:36:46.747+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:36:46.756+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:36:46.757+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:36:46.779+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:36:46.790+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.9 seconds (process running for 329.834)
+2025-08-18T12:36:46.793+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:36:55.616+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18T12:36:55.616+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-18T12:36:55.619+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-18T12:36:55.636+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : Fetching user Details with id 2:
+2025-08-18T12:36:55.649+05:30  INFO 9360 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : response coming from service  for user id 2 :User(id=2, name=teja, email=teja@gmail.com)
+2025-08-18T12:41:34.971+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:41:34.976+05:30  INFO 9360 --- [SpringBootUser] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:41:34.998+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:41:35.004+05:30  INFO 9360 --- [SpringBootUser] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:41:35.005+05:30  INFO 9360 --- [SpringBootUser] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-18T12:41:35.009+05:30  INFO 9360 --- [SpringBootUser] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-18T12:41:35.117+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:41:35.117+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:41:35.384+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:41:35.393+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-18T12:41:35.470+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:41:35.470+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:41:35.470+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:41:35.496+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:41:35.497+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 378 ms
+2025-08-18T12:41:35.598+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:41:35.601+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:41:35.610+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:41:35.611+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-18T12:41:35.629+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17ee0d49
+2025-08-18T12:41:35.630+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-18T12:41:35.631+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:41:35.668+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:41:35.678+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:41:35.758+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:41:35.844+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:41:35.971+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:41:35.980+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:41:35.985+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:41:36.009+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:41:36.018+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.925 seconds (process running for 619.062)
+2025-08-18T12:41:36.023+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:08.611+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:08.614+05:30  INFO 9360 --- [SpringBootUser] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:08.627+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:08.630+05:30  INFO 9360 --- [SpringBootUser] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:08.631+05:30  INFO 9360 --- [SpringBootUser] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-18T12:42:08.634+05:30  INFO 9360 --- [SpringBootUser] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-18T12:42:08.721+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:08.722+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:09.000+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:09.009+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:09.104+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:09.104+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:09.104+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:09.127+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:09.127+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 404 ms
+2025-08-18T12:42:09.184+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:09.186+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:09.193+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:09.194+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-18T12:42:09.215+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@655825d3
+2025-08-18T12:42:09.216+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-18T12:42:09.217+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:09.271+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:09.283+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:09.371+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:09.460+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:09.599+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:09.614+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:09.618+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:09.656+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:09.665+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.967 seconds (process running for 652.709)
+2025-08-18T12:42:09.667+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:16.079+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:16.084+05:30  INFO 9360 --- [SpringBootUser] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:16.107+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:16.112+05:30  INFO 9360 --- [SpringBootUser] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:16.113+05:30  INFO 9360 --- [SpringBootUser] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-18T12:42:16.116+05:30  INFO 9360 --- [SpringBootUser] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-08-18T12:42:16.207+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:16.207+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:16.469+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:16.477+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:16.557+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:16.557+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:16.557+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:16.577+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:16.578+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 369 ms
+2025-08-18T12:42:16.666+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:16.668+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:16.673+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:16.674+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-08-18T12:42:16.689+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19902c16
+2025-08-18T12:42:16.690+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-08-18T12:42:16.692+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:16.719+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:16.732+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:16.801+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:16.866+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:16.986+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:16.993+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:16.997+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:17.020+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:17.029+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.843 seconds (process running for 660.073)
+2025-08-18T12:42:17.030+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:28.621+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:28.625+05:30  INFO 9360 --- [SpringBootUser] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:28.646+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:28.649+05:30  INFO 9360 --- [SpringBootUser] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:28.651+05:30  INFO 9360 --- [SpringBootUser] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-08-18T12:42:28.662+05:30  INFO 9360 --- [SpringBootUser] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-08-18T12:42:28.759+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:28.760+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:29.037+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:29.046+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:29.139+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:29.140+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:29.140+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:29.161+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:29.163+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 401 ms
+2025-08-18T12:42:29.231+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:29.233+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:29.239+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:29.239+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-08-18T12:42:29.252+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3640c3b0
+2025-08-18T12:42:29.253+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-08-18T12:42:29.254+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:29.290+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:29.299+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:29.368+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:29.434+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:29.554+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:29.560+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:29.563+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:29.590+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:29.600+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.861 seconds (process running for 672.645)
+2025-08-18T12:42:29.603+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:37.095+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:37.097+05:30  INFO 9360 --- [SpringBootUser] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:37.114+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:37.116+05:30  INFO 9360 --- [SpringBootUser] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:37.117+05:30  INFO 9360 --- [SpringBootUser] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-08-18T12:42:37.119+05:30  INFO 9360 --- [SpringBootUser] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-08-18T12:42:37.223+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:37.224+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:37.488+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:37.497+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:37.580+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:37.581+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:37.581+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:37.619+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:37.619+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 394 ms
+2025-08-18T12:42:37.684+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:37.685+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:37.694+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:37.694+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2025-08-18T12:42:37.713+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34814c62
+2025-08-18T12:42:37.713+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2025-08-18T12:42:37.715+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:37.743+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:37.753+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:37.826+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:37.891+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:37.994+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:38.005+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:38.008+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:38.043+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:38.051+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.851 seconds (process running for 681.094)
+2025-08-18T12:42:38.053+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:41.474+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:41.476+05:30  INFO 9360 --- [SpringBootUser] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:41.495+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:41.498+05:30  INFO 9360 --- [SpringBootUser] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:41.499+05:30  INFO 9360 --- [SpringBootUser] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2025-08-18T12:42:41.502+05:30  INFO 9360 --- [SpringBootUser] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2025-08-18T12:42:41.608+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:41.608+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:41.894+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:41.905+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:42.013+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:42.013+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:42.013+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:42.038+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:42.038+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 429 ms
+2025-08-18T12:42:42.089+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:42.091+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:42.098+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:42.099+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2025-08-18T12:42:42.113+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@658dc187
+2025-08-18T12:42:42.113+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2025-08-18T12:42:42.114+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:42.143+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:42.153+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:42.230+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:42.307+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:42.424+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:42.433+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:42.435+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:42.459+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:42.470+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.887 seconds (process running for 685.514)
+2025-08-18T12:42:42.473+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:47.920+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:47.923+05:30  INFO 9360 --- [SpringBootUser] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:47.937+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:47.939+05:30  INFO 9360 --- [SpringBootUser] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:47.939+05:30  INFO 9360 --- [SpringBootUser] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2025-08-18T12:42:47.943+05:30  INFO 9360 --- [SpringBootUser] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2025-08-18T12:42:48.060+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:48.060+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:48.344+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:48.354+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:48.447+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:48.447+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:48.447+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:48.473+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:48.473+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 410 ms
+2025-08-18T12:42:48.554+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:48.555+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:48.560+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:48.561+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2025-08-18T12:42:48.575+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@614a5b27
+2025-08-18T12:42:48.575+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2025-08-18T12:42:48.576+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:48.608+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:48.619+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:48.686+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:48.761+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:48.872+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:48.884+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:48.888+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:48.910+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:48.921+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.89 seconds (process running for 691.965)
+2025-08-18T12:42:48.924+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:42:56.413+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:42:56.419+05:30  INFO 9360 --- [SpringBootUser] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:42:56.438+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:42:56.440+05:30  INFO 9360 --- [SpringBootUser] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:56.441+05:30  INFO 9360 --- [SpringBootUser] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2025-08-18T12:42:56.444+05:30  INFO 9360 --- [SpringBootUser] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2025-08-18T12:42:56.551+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:42:56.551+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:42:56.811+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:42:56.818+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-08-18T12:42:56.913+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:42:56.914+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:42:56.914+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:42:56.928+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:42:56.928+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 375 ms
+2025-08-18T12:42:56.984+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:42:56.986+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:42:56.993+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:42:56.993+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2025-08-18T12:42:57.006+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@309066fd
+2025-08-18T12:42:57.006+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2025-08-18T12:42:57.007+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:42:57.040+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:42:57.048+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:42:57.114+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:42:57.176+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:42:57.327+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:42:57.335+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:42:57.338+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:42:57.386+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:42:57.395+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.864 seconds (process running for 700.439)
+2025-08-18T12:42:57.397+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:43:42.516+05:30  INFO 9360 --- [SpringBootUser] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-18T12:43:42.519+05:30  INFO 9360 --- [SpringBootUser] [Thread-47] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:43:42.537+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:43:42.540+05:30  INFO 9360 --- [SpringBootUser] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:43:42.541+05:30  INFO 9360 --- [SpringBootUser] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2025-08-18T12:43:42.544+05:30  INFO 9360 --- [SpringBootUser] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2025-08-18T12:43:42.647+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 9360 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:43:42.648+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:43:42.907+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:43:42.914+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-08-18T12:43:42.985+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:43:42.986+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:43:42.986+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:43:43.004+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:43:43.004+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2025-08-18T12:43:43.066+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:43:43.068+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:43:43.075+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:43:43.075+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2025-08-18T12:43:43.087+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7aa8a441
+2025-08-18T12:43:43.087+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2025-08-18T12:43:43.089+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:43:43.127+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:43:43.134+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:43:43.198+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:43:43.268+05:30  WARN 9360 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:43:43.386+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:43:43.397+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:43:43.399+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:43:43.427+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:43:43.441+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 0.813 seconds (process running for 746.485)
+2025-08-18T12:43:43.444+05:30  INFO 9360 --- [SpringBootUser] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-18T12:43:44.105+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(41)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-18T12:43:44.107+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(41)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:43:44.122+05:30  INFO 9360 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:43:44.126+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(41)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:43:44.126+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2025-08-18T12:43:44.131+05:30  INFO 9360 --- [SpringBootUser] [RMI TCP Connection(41)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2025-08-18T12:44:00.213+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Starting SpringBootUserApplication using Java 21.0.8 with PID 14844 (C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser\target\classes started by navee in C:\Users\navee\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\SpringBootUser)
+2025-08-18T12:44:00.216+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T12:44:00.276+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18T12:44:00.277+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18T12:44:01.501+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18T12:44:01.559+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-08-18T12:44:02.296+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-18T12:44:02.332+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-18T12:44:02.333+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-18T12:44:02.453+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-18T12:44:02.456+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2177 ms
+2025-08-18T12:44:02.781+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18T12:44:02.840+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-18T12:44:02.885+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-18T12:44:03.186+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18T12:44:03.225+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-18T12:44:03.588+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f6c608c
+2025-08-18T12:44:03.591+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-18T12:44:03.682+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18T12:44:04.579+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18T12:44:04.645+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:44:05.206+05:30  WARN 14844 --- [SpringBootUser] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18T12:44:05.498+05:30  WARN 14844 --- [SpringBootUser] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-18T12:44:05.934+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/springboot'
+2025-08-18T12:44:05.975+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-18T12:44:05.984+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-18T12:44:06.077+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-18T12:44:06.091+05:30  INFO 14844 --- [SpringBootUser] [restartedMain] c.e.demo.SpringBootUserApplication       : Started SpringBootUserApplication in 6.382 seconds (process running for 7.157)
+2025-08-18T12:44:06.469+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18T12:44:06.469+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-18T12:44:06.472+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-18T12:44:20.391+05:30  INFO 14844 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : Fetching user Details with id 3:
+2025-08-18T12:44:20.391+05:30  INFO 14844 --- [SpringBootUser] [http-nio-8080-exec-1] c.example.demo.services.UserServiceImpl  : Asking to database with id  details 3,
+2025-08-18T12:44:20.591+05:30  INFO 14844 --- [SpringBootUser] [http-nio-8080-exec-1] c.example.demo.services.UserServiceImpl  : getting details from database with id 3,User(id=3, name=Deepa, email=Deepa@gmail.com)
+2025-08-18T12:44:20.593+05:30  INFO 14844 --- [SpringBootUser] [http-nio-8080-exec-1] c.e.demo.controller.UserController       : response coming from service  for user id 3 :User(id=3, name=Deepa, email=Deepa@gmail.com)
+2025-08-18T12:51:07.120+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-18T12:51:07.129+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-18T12:51:07.157+05:30  INFO 14844 --- [SpringBootUser] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-18T12:51:07.157+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18T12:51:07.173+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-18T12:51:07.191+05:30  INFO 14844 --- [SpringBootUser] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
