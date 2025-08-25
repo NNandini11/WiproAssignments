@@ -1,0 +1,94 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2 class="app-title">Feedback Form</h2>
+
+
+    <form [formGroup]="myFormGroup" (ngSubmit)="onSubmitReact()">
+
+     
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Name*</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          placeholder="Enter your name"
+          (blur)="touch('name')"
+        />
+        <mat-error *ngIf="myFormGroup.get('name')?.hasError('required') && (myFormGroup.get('name')?.touched || myFormGroup.get('name')?.dirty)">
+          Name is required
+        </mat-error>
+        <mat-error *ngIf="myFormGroup.get('name')?.hasError('minlength') && (myFormGroup.get('name')?.touched || myFormGroup.get('name')?.dirty)">
+          Name must be at least 8 characters
+        </mat-error>
+      </mat-form-field>
+
+     
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email*</mat-label>
+       
+        <input
+          matInput
+          type="email"
+          formControlName="email"
+          placeholder="Enter your email"
+          (focus)="touch('name')"
+          (blur)="touch('email')"
+        />
+        <mat-error *ngIf="myFormGroup.get('email')?.hasError('required') && (myFormGroup.get('email')?.touched || myFormGroup.get('email')?.dirty)">
+          Email is required
+        </mat-error>
+        <mat-error *ngIf="myFormGroup.get('email')?.hasError('email') && (myFormGroup.get('email')?.touched || myFormGroup.get('email')?.dirty)">
+          Enter a valid email
+        </mat-error>
+      </mat-form-field>
+
+      
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Subject*</mat-label>
+       
+        <input
+          matInput
+          formControlName="subject"
+          maxlength="40"
+          placeholder="Enter subject"
+          (focus)="touch('name'); touch('email')"
+          (blur)="touch('subject')"
+        />
+        <mat-error *ngIf="myFormGroup.get('subject')?.hasError('required') && (myFormGroup.get('subject')?.touched || myFormGroup.get('subject')?.dirty)">
+          Subject is required
+        </mat-error>
+        <mat-error *ngIf="myFormGroup.get('subject')?.hasError('maxlength') && (myFormGroup.get('subject')?.touched || myFormGroup.get('subject')?.dirty)">
+          Maximum 40 characters allowed
+        </mat-error>
+      </mat-form-field>
+
+     
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Comments / Issue*</mat-label>
+        
+        <textarea
+          matInput
+          formControlName="issue"
+          maxlength="350"
+          placeholder="Enter your issue"
+          (focus)="touch('name'); touch('email'); touch('subject')"
+          (blur)="touch('issue')"
+        ></textarea>
+        <mat-error *ngIf="myFormGroup.get('issue')?.hasError('required') && (myFormGroup.get('issue')?.touched || myFormGroup.get('issue')?.dirty)">
+          Comments are required
+        </mat-error>
+        <mat-error *ngIf="myFormGroup.get('issue')?.hasError('maxlength') && (myFormGroup.get('issue')?.touched || myFormGroup.get('issue')?.dirty)">
+          Maximum 350 characters allowed
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">
+        Submit
+      </button>
+      <p *ngIf="submitted" class="success-msg">
+  Thank you for your feedback, we will get back to you shortly!
+</p>
+
+    </form>
+  </div>
+</div>
