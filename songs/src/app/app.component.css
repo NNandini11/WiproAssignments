@@ -1,0 +1,42 @@
+.container {
+  padding: 20px;
+}
+
+.dropdown {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: start;
+}
+
+mat-card {
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+mat-card:hover {
+  transform: scale(1.05);
+}
+
+.top-rated {
+  border: 2px solid gold;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.play-icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 5px;
+}

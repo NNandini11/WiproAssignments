@@ -1,0 +1,32 @@
+<div class="container">
+  <mat-form-field appearance="fill" class="dropdown">
+    <mat-label>Filter by Artist</mat-label>
+    <mat-select [(value)]="selectedArtist">
+      <mat-option *ngFor="let artist of artists" [value]="artist">{{ artist }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="dropdown">
+    <mat-label>Filter by Album</mat-label>
+    <mat-select [(value)]="selectedAlbum">
+      <mat-option *ngFor="let album of albums" [value]="album">{{ album }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="song-grid">
+    <mat-card *ngFor="let song of filteredSongs" class="song-card" [ngClass]="{'top-rated': song.rating === 5}">
+      <img *ngIf="song.image" mat-card-image [src]="song.image" alt="{{ song.name }}">
+      <mat-card-title>{{ song.name }}</mat-card-title>
+      <mat-card-subtitle>{{ song.artist }} - {{ song.album }}</mat-card-subtitle>
+      <mat-card-content>
+        <p>Duration: {{ song.duration }}</p>
+        <div class="stars">
+          <mat-icon *ngFor="let star of [1,2,3,4,5]" color="warn">
+            {{ star <= song.rating ? 'star' : 'star_border' }}
+          </mat-icon>
+          <mat-icon color="primary" class="play-icon">play_circle_filled</mat-icon>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
